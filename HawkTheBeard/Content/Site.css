@@ -1,0 +1,165 @@
+﻿html{
+    min-height:100%;
+}
+
+body {
+       min-height: 100vh;
+    padding-top: 130px;
+    position: relative;
+
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+
+}
+
+/*Color of top-bar*/
+.navbar-inverse{
+    /*background-color: #74A6BD;
+    border-color:#74A6BD;*/
+    color: gray;
+
+}
+
+/*Color of Logo*/
+.navbar-inverse .navbar-brand {
+    /*color: #46433A;*/
+    color:gray;
+}
+
+/*Color of about button*/
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+
+
+.row{
+   
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+.Licence{
+   
+    height: 168px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    height:150px;
+    background-color: #222222;
+    padding: 10px;
+}
+
+.sizeposbutton{
+    float: left;
+    position: relative;
+    margin: 10px;
+}
+
+/*About button at the right side of navbar*/
+.navbar-inverse .navbar-collapse{
+    float: right;
+    padding-top: 30px;
+    font-size: 150%;
+}
+
+
+
+h2{
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
+
+.footer-bottom{
+   bottom: 0;
+    background-color: #222222;
+    position: absolute;
+    width: 100%;
+}
+
+.pull-left{
+    padding-top: 20px;
+    color: white;
+}
+
+.pullDown{
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+/*Change font of header*/
+.headerFont{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*postition of pictures on front page*/
+.img-responsive{
+    align-content:center;
+}
+
+/*This the possible size of footer when resizing screen. This way the footer does not overflow the content*/
+.test {
+    padding-bottom: 400px;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+
+
+
+/*Color of text of trips*/
+div > a{
+    color: black;
+}
+
+div > a:visited{
+    color: black;
+}
+
+div > a:hover{
+    color: #59544c;
+    text-decoration: none;
+}
+
+
+.article{
+    padding-top: 0.1em;
+}
+
+/*Padding on about article*/
+.about{
+    padding-top: 0.1em;
+}
+
+
+p a img{
+    height: 40px;
+    width: 160px;
+    color: red;
+}

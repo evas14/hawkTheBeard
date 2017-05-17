@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>@ViewBag.Title Hawk the Beard</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+
+    <body class="Site">
+
+        
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+
+           
+            <div class="container">
+                
+    
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href='@Url.Action("Index", "Home")'>
+                        <img class="logo" src="~/Content/img/haukurGlowFrame.png" alt="Iceland HawktheBeard tours">
+                    </a>
+
+
+                   
+
+
+                   
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("More", "More", "Home")</li>
+                        <!--
+                        <li>@Html.ActionLink("Terms And Conditions", "TermsAndConditions", "Home")</li>
+                        -->
+
+                    </ul>
+
+                    <!--Loginið-->
+                    <!-- /*@Html.Partial("_LoginPartial")*/-->
+
+
+                </div>
+            </div>
+        </div>
+        <!--<div class="container body-content">-->
+        <div class="container test">
+
+            @RenderBody()
+        </div>
+
+
+        
+        <!------------------------FOOTER ------------------------------------------------------------------------------------>
+        <!--/.container-->
+        <!--/.footer-->
+
+        <footer class="footer-bottom">
+           
+
+           
+
+
+            <div class="container">
+                <p class="pull-left"> Hawk the beard ehf. (6208160860) 
+                    </br> Email:<a href="mailto:hawkthebeard@gmail.com?Subject=HawktheBeard"> hawkthebeard@gmail.com </a>
+                    </br>Phone: +354 845 3637 </br> Adress: Sóltún 4, Iceland  
+                    </br> Designed by <a href="mailto:torfevas@mi.is?Subject=website"> eva </a>
+                    </br>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.hawkthebeard.is/"><img class="my-image" src="~/Content/img-share-facebook.png" alt="Hawk the beard"></a>
+                </p>
+
+               
+
+                <div class="pull-right">
+                    <img class="img-responsive Licence" src="~/Content/136en.jpg" alt="Iceland Tourist Board">
+
+                </div>
+            </div>
+        </footer>
+
+
+        <!--/.footer-bottom-->
+        <!------------------------FOOTER ------------------------------------------------------------------------------------>
+        <!--</div>-->
+
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+
+</html>
